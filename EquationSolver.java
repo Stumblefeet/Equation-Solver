@@ -52,7 +52,7 @@ public class EquationSolver {
 
 		unknown = findUnkown();
 		if(unknown == null){
-			q.add("Ingen ukjente...");
+			q.add("No unknowns...");
 			double sum_l = 0;
 			double sum_r = 0;
 			for(int i=0;i<left.length;i++){
@@ -216,7 +216,7 @@ public class EquationSolver {
 			if(right_n == 0){
 				right[0] = "+0";
 				addEquation();
-				q.add("Alle verdier for "+unknown+" er løsninger.");
+				q.add("Alle verdier for "+unknown+" er lÃ¸sninger.");
 				String[] ret = q.toArray(new String[0]);
 				return new Solution(ret);
 			}else{
@@ -228,7 +228,7 @@ public class EquationSolver {
 					right[0] = "+"+right[0];
 				}
 				addEquation();
-				q.add("Der finnes ingen løsninger.");
+				q.add("Der finnes ingen lÃ¸sninger.");
 				String[] ret = q.toArray(new String[0]);
 				return new Solution(ret);
 			}
